@@ -9,5 +9,5 @@
 docker network create --subnet=192.168.56.0/24 user_defined_nw
 docker network create --help
 
-docker run -it --name test --net=user_defined_nw --ip=192.168.56.100 -d centos:centos6 /bin/bash
+docker run -it --name test --net=user_defined_nw --ip=192.168.56.100 -d ubuntu:lastest /bin/bash
 ```
