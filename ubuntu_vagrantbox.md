@@ -3,9 +3,9 @@
 1. Create VM installed ubuntu on Virtual box
 2. Install make by below comand
 
-```bash
-sudo apt install make
-```
+   ```bash
+   sudo apt install make
+   ```
 
 3. Insert CD
 
