@@ -77,7 +77,7 @@
        apt-get upgrade
      SHELL
    end
-  ```
+   ```
 
 3. move directory that exists Vagrantfile Start vagrant by below command
 
