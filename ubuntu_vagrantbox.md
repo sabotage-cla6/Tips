@@ -60,23 +60,23 @@
 2. Edit Vagrantfile like below
 
    ```bash
-  # -*- mode: ruby -*-
-  # vi: set ft=ruby :
+   # -*- mode: ruby -*-
+   # vi: set ft=ruby :
 
-  Vagrant.configure("2") do |config|
-    config.vm.box = "sabotagecla6/ubuntu1804"
+   Vagrant.configure("2") do |config|
+     config.vm.box = "sabotagecla6/ubuntu1804"
 
-    config.vm.provider "virtualbox" do |vb|
-      vb.gui = true
-      vb.memory = "2048"
-      vb.name = "python-dev"
-    end
+     config.vm.provider "virtualbox" do |vb|
+       vb.gui = true
+       vb.memory = "2048"
+       vb.name = "python-dev"
+     end
 
-    config.vm.provision "shell", inline: <<-SHELL
-      apt-get update
-      apt-get upgrade
-    SHELL
-  end
+     config.vm.provision "shell", inline: <<-SHELL
+       apt-get update
+       apt-get upgrade
+     SHELL
+   end
   ```
 
 3. move directory that exists Vagrantfile Start vagrant by below command
